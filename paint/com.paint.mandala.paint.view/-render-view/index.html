@@ -1,0 +1,634 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RenderView</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>Mandala SDK API</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":paint:dokkaHtmlPartial/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="paint::com.paint.mandala.paint.view/RenderView///PointingToDeclaration//1969062791">
+  <div class="breadcrumbs"><a href="../../index.html">paint</a><span class="delimiter">/</span><a href="../index.html">com.paint.mandala.paint.view</a><span class="delimiter">/</span><span class="current">RenderView</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Render</span><wbr><span><span>View</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">RenderView</a>&nbsp;<span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a>&nbsp;</span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">attrSet<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">defType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.paint.mandala.paint.protect.opengl/GLTextureView///PointingToDeclaration/">GLTextureView</span>, <span data-unresolved-link="com.paint.mandala.paint.protect.ges/GestureListener///PointingToDeclaration/">GestureListener</span>, <span data-unresolved-link="com.paint.mandala.paint.protect.impl/ImplPainting.Callback///PointingToDeclaration/">ImplPainting.Callback</span></div><p class="paragraph">填色渲染View</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="436338824%2FConstructors%2F1969062791" anchor-label="RenderView" id="436338824%2FConstructors%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-render-view.html"><span>Render</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436338824%2FConstructors%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">attrSet<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/AttributeSet.html">AttributeSet</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">defType<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1020418347%2FFunctions%2F1969062791" anchor-label="addPaintColor" id="-1020418347%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-paint-color.html"><span>add</span><wbr><span>Paint</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1020418347%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-paint-color.html"><span class="token function">addPaintColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">paintColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">regionColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">touchX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">touchY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">anim<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">添加填色信息</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1710858120%2FFunctions%2F1969062791" anchor-label="addPaintList" id="-1710858120%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-paint-list.html"><span>add</span><wbr><span>Paint</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1710858120%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-paint-list.html"><span class="token function">addPaintList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">list<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../com.paint.mandala.paint.model/-painted-info/index.html">PaintedInfo</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">anim<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">添加填色信息列表</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1683970398%2FFunctions%2F1969062791" anchor-label="isAnimating" id="-1683970398%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-animating.html"><span>is</span><wbr><span><span>Animating</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1683970398%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-animating.html"><span class="token function">isAnimating</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">动画是否进行中，包含填色动画</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="556095638%2FFunctions%2F1969062791" anchor-label="isPainting" id="556095638%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-painting.html"><span>is</span><wbr><span><span>Painting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="556095638%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-painting.html"><span class="token function">isPainting</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">填色动画是否进行中</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="924158269%2FFunctions%2F1969062791" anchor-label="isPrepared" id="924158269%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-prepared.html"><span>is</span><wbr><span><span>Prepared</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="924158269%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-prepared.html"><span class="token function">isPrepared</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">纹理是否加载好</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1212966463%2FFunctions%2F1969062791" anchor-label="isReplayFinished" id="-1212966463%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-replay-finished.html"><span>is</span><wbr><span>Replay</span><wbr><span><span>Finished</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1212966463%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-replay-finished.html"><span class="token function">isReplayFinished</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">回播是否已完成，包含被终止</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-50044167%2FFunctions%2F1969062791" anchor-label="onDetachedFromWindow" id="-50044167%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-detached-from-window.html"><span>on</span><wbr><span>Detached</span><wbr><span>From</span><wbr><span><span>Window</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-50044167%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">protected </span><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-detached-from-window.html"><span class="token function">onDetachedFromWindow</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1758623052%2FFunctions%2F1969062791" anchor-label="onDrawFrame" id="1758623052%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-draw-frame.html"><span>on</span><wbr><span>Draw</span><wbr><span><span>Frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1758623052%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-draw-frame.html"><span class="token function">onDrawFrame</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1169441592%2FFunctions%2F1969062791" anchor-label="onFirstFrame" id="-1169441592%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-first-frame.html"><span>on</span><wbr><span>First</span><wbr><span><span>Frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1169441592%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-first-frame.html"><span class="token function">onFirstFrame</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1869327355%2FFunctions%2F1969062791" anchor-label="onGestureScale" id="1869327355%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-gesture-scale.html"><span>on</span><wbr><span>Gesture</span><wbr><span><span>Scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1869327355%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-gesture-scale.html"><span class="token function">onGestureScale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sx<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">sy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">px<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">py<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1970094464%2FFunctions%2F1969062791" anchor-label="onGestureScroll" id="1970094464%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-gesture-scroll.html"><span>on</span><wbr><span>Gesture</span><wbr><span><span>Scroll</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1970094464%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-gesture-scroll.html"><span class="token function">onGestureScroll</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dx<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">dy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1356758282%2FFunctions%2F1969062791" anchor-label="onLongClick" id="-1356758282%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-long-click.html"><span>on</span><wbr><span>Long</span><wbr><span><span>Click</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1356758282%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-long-click.html"><span class="token function">onLongClick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1861372669%2FFunctions%2F1969062791" anchor-label="onRegionLoaded" id="-1861372669%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-region-loaded.html"><span>on</span><wbr><span>Region</span><wbr><span><span>Loaded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1861372669%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-region-loaded.html"><span class="token function">onRegionLoaded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bitmap<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="511873797%2FFunctions%2F1969062791" anchor-label="onSingleTap" id="511873797%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-single-tap.html"><span>on</span><wbr><span>Single</span><wbr><span><span>Tap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="511873797%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-single-tap.html"><span class="token function">onSingleTap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="266476641%2FFunctions%2F1969062791" anchor-label="onSurfaceChanged" id="266476641%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-changed.html"><span>on</span><wbr><span>Surface</span><wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="266476641%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-surface-changed.html"><span class="token function">onSurfaceChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="339223978%2FFunctions%2F1969062791" anchor-label="onSurfaceCreated" id="339223978%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-created.html"><span>on</span><wbr><span>Surface</span><wbr><span><span>Created</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="339223978%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-surface-created.html"><span class="token function">onSurfaceCreated</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1979697575%2FFunctions%2F1969062791" anchor-label="onSurfaceDestroyed" id="-1979697575%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-surface-destroyed.html"><span>on</span><wbr><span>Surface</span><wbr><span><span>Destroyed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1979697575%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-surface-destroyed.html"><span class="token function">onSurfaceDestroyed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-812221512%2FFunctions%2F1969062791" anchor-label="onTextureError" id="-812221512%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-texture-error.html"><span>on</span><wbr><span>Texture</span><wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-812221512%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-texture-error.html"><span class="token function">onTextureError</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1739590640%2FFunctions%2F1969062791" anchor-label="onTouchEvent" id="-1739590640%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-touch-event.html"><span>on</span><wbr><span>Touch</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1739590640%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-touch-event.html"><span class="token function">onTouchEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/MotionEvent.html">MotionEvent</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1913041102%2FFunctions%2F1969062791" anchor-label="requestCapture" id="-1913041102%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="request-capture.html"><span>request</span><wbr><span><span>Capture</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1913041102%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="request-capture.html"><span class="token function">requestCapture</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">force<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">notifyAfterCapture<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">请求截图。由于截图是耗时操作，所以截图是异步的</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="149934586%2FFunctions%2F1969062791" anchor-label="setCategoryId" id="149934586%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-category-id.html"><span>set</span><wbr><span>Category</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="149934586%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-category-id.html"><span class="token function">setCategoryId</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置关卡分类id</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1361313575%2FFunctions%2F1969062791" anchor-label="setCurRegionGroup" id="1361313575%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-cur-region-group.html"><span>set</span><wbr><span>Cur</span><wbr><span>Region</span><wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1361313575%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-cur-region-group.html"><span class="token function">setCurRegionGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupIndex<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置当前区域的分组</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="718334053%2FFunctions%2F1969062791" anchor-label="setEnableGesture" id="718334053%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-enable-gesture.html"><span>set</span><wbr><span>Enable</span><wbr><span><span>Gesture</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="718334053%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-enable-gesture.html"><span class="token function">setEnableGesture</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">启用或禁止手挚操作</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1130692159%2FFunctions%2F1969062791" anchor-label="setListener" id="1130692159%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-listener.html"><span>set</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1130692159%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-listener.html"><span class="token function">setListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.paint.mandala.paint/-paint-listener/index.html">PaintListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置填色监听</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1271031528%2FFunctions%2F1969062791" anchor-label="setPaintAnimListener" id="-1271031528%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-paint-anim-listener.html"><span>set</span><wbr><span>Paint</span><wbr><span>Anim</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1271031528%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-paint-anim-listener.html"><span class="token function">setPaintAnimListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.paint.mandala.paint/-paint-anim-listener/index.html">PaintAnimListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置填色监听</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1597997296%2FFunctions%2F1969062791" anchor-label="setPaintSource" id="-1597997296%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-paint-source.html"><span>set</span><wbr><span>Paint</span><wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1597997296%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-paint-source.html"><span class="token function">setPaintSource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span class="token operator">: </span><a href="../../com.paint.mandala.paint.model/-paint-source/index.html">PaintSource</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置关卡来源</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="85142277%2FFunctions%2F1969062791" anchor-label="setRenderBackgroundColor" id="85142277%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-render-background-color.html"><span>set</span><wbr><span>Render</span><wbr><span>Background</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="85142277%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-render-background-color.html"><span class="token function">setRenderBackgroundColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">color<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置画布颜色</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1440972053%2FFunctions%2F1969062791" anchor-label="setReplayData" id="-1440972053%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-replay-data.html"><span>set</span><wbr><span>Replay</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1440972053%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-replay-data.html"><span class="token function">setReplayData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">paintData<span class="token operator">: </span><a href="../../com.paint.mandala.paint.model/-paint-data/index.html">PaintData</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置回播关卡数据</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-21639377%2FFunctions%2F1969062791" anchor-label="setReplayListener" id="-21639377%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-replay-listener.html"><span>set</span><wbr><span>Replay</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-21639377%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-replay-listener.html"><span class="token function">setReplayListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="../../com.paint.mandala.paint/-replay-listener/index.html">ReplayListener</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置回播监听</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1337832294%2FFunctions%2F1969062791" anchor-label="setShadowMode" id="-1337832294%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-shadow-mode.html"><span>set</span><wbr><span>Shadow</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1337832294%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-shadow-mode.html"><span class="token function">setShadowMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">shadowMode<span class="token operator">: </span><a href="../../com.paint.mandala.paint.model/-shadow-mode/index.html">ShadowMode</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置高亮区域 <a href="../../com.paint.mandala.paint.model/-shadow-mode/index.html">ShadowMode</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1771952463%2FFunctions%2F1969062791" anchor-label="setupForReplay" id="-1771952463%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="setup-for-replay.html"><span>setup</span><wbr><span>For</span><wbr><span><span>Replay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771952463%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="setup-for-replay.html"><span class="token function">setupForReplay</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">设置回播参数</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2112957770%2FFunctions%2F1969062791" anchor-label="setupView" id="2112957770%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="setup-view.html"><span>setup</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2112957770%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="setup-view.html"><span class="token function">setupView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">paintData<span class="token operator">: </span><a href="../../com.paint.mandala.paint.model/-paint-data/index.html">PaintData</a><span class="token punctuation">, </span></span><span class="parameter ">paint<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">通过paintData配置渲染View</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="903798445%2FFunctions%2F1969062791" anchor-label="startReplay" id="903798445%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-replay.html"><span>start</span><wbr><span><span>Replay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="903798445%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="start-replay.html"><span class="token function">startReplay</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">开始回播动画</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="420583547%2FFunctions%2F1969062791" anchor-label="stopReplay" id="420583547%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-replay.html"><span>stop</span><wbr><span><span>Replay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="420583547%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="stop-replay.html"><span class="token function">stopReplay</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">停止回播动画</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1663227607%2FFunctions%2F1969062791" anchor-label="zoomBack" id="-1663227607%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="zoom-back.html"><span>zoom</span><wbr><span><span>Back</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1663227607%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="zoom-back.html"><span class="token function">zoomBack</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">anim<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span>Const.ANIM_DURATION</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">画布缩放到初始位置</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1037587665%2FFunctions%2F1969062791" anchor-label="zoomToNextRegion" id="-1037587665%2FFunctions%2F1969062791" data-filterable-set=":paint:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":paint:dokkaHtmlPartial/release" data-filterable-set=":paint:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="zoom-to-next-region.html"><span>zoom</span><wbr><span>To</span><wbr><span>Next</span><wbr><span><span>Region</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1037587665%2FFunctions%2F1969062791"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":paint:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="zoom-to-next-region.html"><span class="token function">zoomToNextRegion</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">画布缩放到下个填色区域中心</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
